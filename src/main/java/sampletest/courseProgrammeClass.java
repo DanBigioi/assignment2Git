@@ -4,17 +4,26 @@ import java.util.ArrayList;
 
 public class courseProgrammeClass {
 
-	String CourseName;
+	String courseName;
 	String startDate;
 	String endDate;
-	ArrayList<String> moduleList = new ArrayList<String>();
-	ArrayList<String> StudentList = new ArrayList<String>();
+	String moduleList;
+	String StudentList;
 	
-	public ArrayList<String> getStudentList() {
+	courseProgrammeClass(String courseName,String startDate, String endDate, String moduleList, String StudentList)
+	  {  
+	      this.courseName = courseName;  
+	      this.startDate = startDate;
+	      this.endDate = endDate;
+	      this.StudentList = StudentList;
+	      this.moduleList = moduleList;
+	    }
+	
+	public String getStudentList() {
 	    return StudentList;
 	  }
 
-	public ArrayList<String> getModuleList() {
+	public String getModuleList() {
 	    return moduleList;
 	  }
 	
@@ -24,7 +33,7 @@ public class courseProgrammeClass {
 	}
 
 	public String getCourseName() {
-	      return CourseName;
+	      return courseName;
 
 	}
 	
