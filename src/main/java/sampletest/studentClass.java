@@ -2,11 +2,19 @@ package sampletest;
 
 public class studentClass {
 	
-	String Name;
-	int Age;
-	String DOB;
-	int ID;
-	String username;
+	  String Name;
+	  int Age;
+	  String DOB;
+	  int ID;
+	  
+	  studentClass(int ID,String Name, int Age, String DOB)
+	  {  
+	      this.ID = ID;  
+	      this.Name = Name;
+	      this.Age = Age;
+	      this.DOB = DOB;
+	      
+	    }
 
 	public void setName(String Name) {
 	      Name = Name;
@@ -38,13 +46,8 @@ public class studentClass {
 
 	}
 	
-	public void setUserName(String username) {
-	      username = username;
-
-	}
-
-	public String getUserName() {
-	      return username + Age;
+	public String getUserName(String Name, String Age) {
+	      return Name + Age;
 
 	}
 	
