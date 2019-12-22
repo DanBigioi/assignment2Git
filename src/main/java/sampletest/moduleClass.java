@@ -8,10 +8,17 @@ public class moduleClass {
 
 	String moduleName;
 	String moduleID;
-	ArrayList<String> AssociatedCourses = new ArrayList<String>();
-	ArrayList<String> StudentList = new ArrayList<String>();
+	String AssociatedCourses;
+	String StudentList;
 
-	
+	moduleClass(String moduleName,String moduleID, String AssociatedCourses, String StudentList)
+	  {  
+	      this.moduleName = moduleName;  
+	      this.moduleID = moduleID;
+	      this.AssociatedCourses = AssociatedCourses;
+	      this.StudentList = StudentList;
+	      
+	    }
 	
 	public void setModuleName(String moduleName) {
 		moduleName = moduleName;
@@ -35,11 +42,11 @@ public class moduleClass {
 	
 	}
 	
-	public ArrayList<String> getAssociatedCourseslist() {
+	public String getAssociatedCourseslist() {
 	    return AssociatedCourses;
 	  }
 	
-	public ArrayList<String> getStudentList() {
+	public String getStudentList() {
 	    return StudentList;
 	  }
 	
